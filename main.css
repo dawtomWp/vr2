@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Alata', sans-serif;
+}
+.top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 16px 0;
+}
+.top-menu {
+    display: flex;
+    list-style: none;
+    gap: 14px;
+}
+
+.top-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.banner {
+   background-image: url("./images/desktop/image-hero.jpg");    
+   background-size: cover;
+   min-height: 600px;
+   display: flex;
+   align-items: center;
+
+}
+.banner-content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.banner-title {
+    padding: 16px;
+    color: white;
+    font-size: 4.2rem;
+    border: 2px solid white;
+    width: 50%;
+    text-transform: uppercase; /* komentarz */ 
+    font-weight: 100;
+}
+
+
+.content
+{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 60px;
+}
+.txt
+{
+    width: 40%;
+    text-align: center;
+    /* border: 1px solid black; */
+    position: relative;
+    left: -88px;
+    top: 95px;
+    padding: 2%;
+    background-color: white;
+
+}
+.txt h2
+{
+    padding: 2%;
+    font-size: 2rem;
+}
+.jpgcontainer {
+    width: 60%;
+}
+.jpg
+{
+    width: 100%;
+}
+
+.projects {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.projects-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects-btn {
+    border:2px solid black;
+    background: transparent;
+    padding: 8px 12px;
+    min-width: 120px;
+    text-transform: uppercase;
+}
+.projects-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.projects-wrapper {
+    display: flex;
+    gap: 18px;
+}
+
+.project {
+    position: relative;
+    flex-grow: 1;
+}
+.project-image {
+    width: 100%;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: white;    
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: red;
+}
+
+@media (max-width:1200px) {
+  .banner-title {
+     width: 75%;   
+  }
+}
+@media (max-width:992px) {
+    .banner-title {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .hamburger {
+        display: block;
+    }
+    .top nav {
+        display: none;
+    }
+}
+
